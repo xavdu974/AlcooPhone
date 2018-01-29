@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component , ViewChild} from '@angular/core';
+import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import { ProfilPage } from '../profil/profil';
 
 /**
@@ -15,8 +15,13 @@ import { ProfilPage } from '../profil/profil';
   templateUrl: 'launch.html',
 })
 export class LaunchPage {
+  @ViewChild('slide2') slides: Slides;
 
   profilPage = ProfilPage;
+
+  goToSlide() {
+    this.slides.slideTo(1, 500);
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

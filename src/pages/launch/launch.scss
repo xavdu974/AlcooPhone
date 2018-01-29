@@ -1,4 +1,8 @@
 page-launch {
+    ion-slides{
+        background-color: white; //rectif de bug sur ios
+    }
+
     h1, h2{
         line-height:42px;
     }

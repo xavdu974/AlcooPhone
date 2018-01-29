@@ -9,16 +9,19 @@
 </ion-header>
 
 
-<ion-slides>
+<ion-slides pager #slide2>
   <ion-slide class="slide1">
     <h1><b>Alcoo</b></h1>
     <h2>phone</h2><br>
-    <button ion-button icon-right color="light" [navPush]="profilPage">
+    <button ion-button icon-right color="light" (click)="goToSlide()">
       Commencer 
         <ion-icon name="arrow-forward"></ion-icon>
     </button>
   </ion-slide>
   <ion-slide class="slide2">
       <h1>Application à usage purement indicatif</h1>
+      <button ion-button icon-right color="light" [navPush]="profilPage">
+        J'ai compris ! 
+      </button>
     </ion-slide>
 </ion-slides>
