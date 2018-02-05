@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DrinkPage } from '../drink/drink';
 
 /**
  * Generated class for the ProfilPage page.
@@ -14,8 +15,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profil.html',
 })
 export class ProfilPage {
+  sexe: string = 'homme';
+  age: number;
+  poids: number;
+  drinkPage = DrinkPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  tooDrink() {
+    this.navCtrl.push(this.drinkPage, {
+      sexe: this.sexe,
+      age: this.age,
+      poids: this.poids
+    })
   }
 
   ionViewDidLoad() {
