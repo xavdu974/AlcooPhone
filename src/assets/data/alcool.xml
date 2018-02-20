@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<alcool>
+    <biere>
+        <item>
+            <name>leffe</name>
+            <degre>9</degre>
+        </item>
+        <item>
+            <name>1664</name>
+            <degre>9</degre>
+        </item>
+    </biere> 
+    <aperitif>
+        <item>
+            <name>whisky</name>
+            <degre>43</degre>
+        </item>
+        <item>
+            <name>porto</name>
+            <degre>19</degre>
+        </item>
+        <item>
+            <name>martini</name>
+            <degre>15</degre>
+        </item>
+    </aperitif>
+    <digestif>
+        <item>
+            <name>limoncello</name>
+            <degre>34</degre>
+        </item>
+        <item>
+            <name>jet27</name>
+            <degre>21</degre>
+        </item>
+        <item>
+            <name>porto</name>
+            <degre>19</degre>
+        </item>
+    </digestif>
+    <vin>
+        <item>
+            <name>vin blanc</name>
+            <degre>12.5</degre>
+        </item>
+        <item>
+            <name>vin rouge</name>
+            <degre>12.5</degre>
+        </item>
+    </vin>
+    <cocktail>
+        <item>
+            <name>pina colada</name>
+            <degre>16</degre>
+        </item>
+        <item>
+            <name>morito</name>
+            <degre>12</degre>
+        </item>
+    </cocktail>
+</alcool>

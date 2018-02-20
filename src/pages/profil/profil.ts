@@ -23,7 +23,7 @@ export class ProfilPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  tooDrink():void {
+  tooDrink() {
     this.navCtrl.push(this.drinkPage, {
       sexe: this.sexe,
       age: this.age,
