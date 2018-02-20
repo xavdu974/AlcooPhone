@@ -7,12 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Liste</ion-title>
+    <ion-title>{{categ}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item>
+      <h2 id="name">Whisky</h2>
+      <p id="degree">40°</p>
+      <button ion-button clear item-end>-</button>
+      <button ion-button clear item-end>+</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

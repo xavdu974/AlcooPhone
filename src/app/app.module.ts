@@ -9,6 +9,7 @@ import { LaunchPage } from '../pages/launch/launch';
 import { ProfilPage } from '../pages/profil/profil';
 import { DrinkPage } from '../pages/drink/drink';
 import { ListPage } from '../pages/list/list';
+import { PolicyPage } from '../pages/policy/policy';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListPage } from '../pages/list/list';
     LaunchPage,
     ProfilPage,
     DrinkPage,
-    ListPage
+    ListPage,
+    PolicyPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { ListPage } from '../pages/list/list';
     LaunchPage,
     ProfilPage,
     DrinkPage,
-    ListPage
+    ListPage,
+    PolicyPage
   ],
   providers: [
     StatusBar,
