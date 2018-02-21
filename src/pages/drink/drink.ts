@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListPage } from '../list/list';
+import { TimePage } from '../time/time';
 
 /**
  * Generated class for the DrinkPage page.
@@ -19,6 +20,7 @@ export class DrinkPage {
   age: number;
   poids: number;
   listPage = ListPage;
+  timePage = TimePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.sexe = this.navParams.get('sexe');
@@ -36,6 +38,12 @@ export class DrinkPage {
   listing(categ){
     this.navCtrl.push(this.listPage, {
       categ: categ,
+    })
+  }
+
+  toTime(){
+    this.navCtrl.push(this.timePage, {
+      //on retourne quoi ?!!
     })
   }
 

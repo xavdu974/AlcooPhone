@@ -1,10 +1,18 @@
 page-launch {
     ion-slides{
-        background-color: white; //rectif de bug sur ios
-    }
+        background: linear-gradient(#25FFBD, #27DECF);
+        
+    }  
 
+    .img{
+        background-image: url("../assets/imgs/backgroundhome.png");
+        width: 360px;
+        height: 640px;
+    }
     h1, h2{
         line-height:42px;
+      
+        
     }
     .slide1 h1{
         margin:0;
@@ -15,5 +23,11 @@ page-launch {
         font-size:4rem;
         position:relative;
         left:20px;
+    }
+    .button{
+        border-radius: 5px;
+        width: 145px;
+        height: 50px;
+        font-weight: bold;
     }
 }
