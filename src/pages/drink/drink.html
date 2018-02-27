@@ -4,10 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
+<ion-header no-border>
   <ion-navbar>
-    <ion-title>drink</ion-title>
+    <img class="mentions" src="../../assets/imgs/Mentions.png" alt="Mentions" (click)="toPolicy()"/>
   </ion-navbar>
 
 </ion-header>
@@ -15,29 +14,64 @@
 
 <ion-content padding>
   <div class="conso">
-    <h1><b>J'ai consommé :</b></h1>
+    <h1><b>J'ai consommé</b></h1>
+ </div>
     <div class="categ">
-      <div (click)="listing('Aperitif')">
-        <img src="../../assets/imgs/Aperitif.png" alt="Apéritif"/>
-        <label>Apéritif</label>        
-      </div>
-      <div (click)="listing('Biere')">
-        <img src="../../assets/imgs/Biere.png" alt="Biere"/>
-        <label>Bière</label>
-      </div>
-      <div (click)="listing('Cocktail')">
+
+  <div class="firstline">
+      
+        <div class="biere" (click)="listing('Biere')">
+            <img src="../../assets/imgs/Biere.png" alt="Biere"/>
+          </div>
+
+          <div class="aperitif" (click)="listing('Aperitif')">
+              <img src="../../assets/imgs/Aperitif.png" alt="Apéritif"/>
+          </div>
+         
+          <div class="digestif" (click)="listing('Digestif')">
+              <img src="../../assets/imgs/Digestif.png" alt="Digestif"/>
+            </div>
+            
+    </div>
+         
+    <div class="firstlabel">
+          <div (click)="listing('Biere')">
+            <label>Bière</label>
+          </div>
+        <div class="aperitiflabel"(click)="listing('Aperitif')">
+            <label>Apéritif</label>
+          </div>
+         <div class="digestiflabel" (click)="listing('Digestif')">
+              <label>Digestif</label>
+          </div>
+     </div>
+
+
+    <div class="secondline">
+
+        <div class="vinchampagne" (click)="listing('VinChampagne')">
+            <img src="../../assets/imgs/VinChampagne.png" alt="Vin & Champagne"/>
+          </div>
+
+      <div class="cocktail" (click)="listing('Cocktail')">
         <img src="../../assets/imgs/Cocktail.png" alt="Cocktail"/>
-        <label>Cocktail</label>
       </div>
-      <div (click)="listing('Digestif')">
-        <img src="../../assets/imgs/Digestif.png" alt="Digestif"/>
-        <label>Digestif</label>
-      </div>
-      <div (click)="listing('VinChampagne')">
-        <img src="../../assets/imgs/VinChampagne.png" alt="Vin & Champagne"/>
+
+    </div>
+
+    <div class="secondlabel">
+
+    <div class="labelvinChampagne" (click)="listing('VinChampagne')">
         <label>Vin / Champagne</label>
       </div>
+
+    <div class="cocktaillabel" (click)="listing('Cocktail')">
+        <label>Cocktail</label>
+      </div>
+
     </div>
+
 </div>
-<button class="suivant" ion-button icon-right (click)="toTime()">Suivant</button>
+
+<button class="suivant" ion-button icon-right (click)="toTime()">Suivant<img class="iconnext" src="../assets/imgs/icon_next.png"></button>
 </ion-content>

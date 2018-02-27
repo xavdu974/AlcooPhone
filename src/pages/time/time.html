@@ -4,15 +4,22 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header no-border>
+  <ion-navbar>
+    <img class="mentions" src="../../assets/imgs/Mentions.png" alt="Mentions" (click)="toPolicy()"/>
+  </ion-navbar>
+
 
 </ion-header>
 
-
 <ion-content padding>
-  <div class="profil">
-    <ion-label>J'ai consommé mon dernier verre à</ion-label>
-    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
-  </div>
-  <button class="suivant" ion-button icon-right (click)="toResult()">Suivant</button>
+<div class="profil">
+  <h1>J'ai consommé mon dernier verre à</h1>
+  <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate" value="20:00"></ion-datetime>
+</div>
+<button class="suivant" ion-button icon-right (click)="toResult()">Suivant</button>
+
+
+
+<button class="suivant" ion-button icon-right (click)="toTime()">Suivant<img class="iconnext" src="../assets/imgs/icon_next.png"></button>
 </ion-content>

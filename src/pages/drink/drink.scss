@@ -1,22 +1,173 @@
+
+
 page-drink {
-  .conso{
-      margin:50px 10px 0 10px;
-  }
 
-  label{
-      display:block;
-  }
-
-  .categ div{
-      display:inline-block;
-      margin:17px;
-  }
-
-  .suivant{
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    width: 100%;
-    left: 0;
+  
+    @font-face {
+                font-family: 'metric';
+                src: url('../../assets/fonts/Metric-Black.otf');
     }
-}
+          
+    ion-content{
+                background: linear-gradient(#25FFBD, #27DECF);
+              
+    }
+    
+        
+    .toolbar-background-md{
+    
+        background: transparent;
+        box-shadow: none !important;
+    
+    }
+    
+    .scroll-content{
+    padding-top: 0px;
+    
+    }
+    
+    .mentions{  
+        position: absolute;
+        right:14px; 
+        top: 20px;  
+    }
+    
+    .conso{
+        margin: 0px 10px 0 10px;
+    }
+    
+    h1{
+    text-align: center;
+    font-family: 'metric',sans-serif;
+    font-weight: bold;
+    font-size: 3rem; 
+    }
+     
+    .scroll-content{
+    margin-top: 10px;
+    
+    }
+      label{
+          display:block;
+      }
+    
+    
+      .categ{
+        text-align: center;
+        margin-left: 0;
+    }
+      .categ div{
+          display:inline-block;
+    
+      }
+    
+      .firstline{
+        display:block;
+        text-align: center;
+        margin-top: 30px;
+        width: 300px;
+      }
+    
+      .secondline{
+        display:block;
+        text-align: center;
+        width: 330px;
+        margin-top: 30px;
+        }
+    
+      .firstlabel{
+        display:block;
+        text-align: center;
+        width: 300px;
+        margin-top: 10px;
+      }
+    
+        .secondlabel{
+        display:block;
+        text-align: center;
+        width: 330px;
+        margin-top: 10px;
+      }
+    
+      .biere{
+        width: 85px;
+    
+        text-align: center;
+      }
+    
+      .aperitif{
+        width: 85px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    
+      .digestif{
+        width: 85px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    
+      .cocktail{
+        margin-left: 10px;
+        width: 140px;
+        text-align: center;
+      }
+    
+      .vinchampagne{
+        width: 140px;
+        text-align: center;
+      }
+    
+      .aperitiflabel{
+       margin-left: 10px;
+      }
+    
+      .digestiflabel{
+        margin-left: 10px;
+      }
+    
+      .cocktaillabel{
+        margin-left: 10px;
+      }
+    
+      .firstlabel label{
+        width: 85px;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+        height: 35px;
+        padding-top: 9px;
+        font-weight: bold;
+      }
+    
+      .secondlabel label{
+       width: 146px;
+       text-align: center;
+       background-color: white;
+       border-radius: 5px;
+       height: 35px;
+       padding-top: 9px;
+       font-weight: bold;
+      }
+    
+      .iconnext{  
+            position: absolute;
+            right:14px;   
+        }
+    
+        .suivant{
+            position: absolute;
+            height: 50px;
+            font-size:1.5rem;
+            font-weight: bold;
+            bottom: 0;
+            margin: 0;
+            width: 100%;
+            left: 0;
+            background-color: white;
+            color: black;
+            text-align: center;
+            
+        
+        }
+    }

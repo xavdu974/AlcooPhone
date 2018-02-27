@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import { TimePage } from '../time/time';
+import { PolicyPage } from '../policy/policy';
 
 /**
  * Generated class for the DrinkPage page.
@@ -21,6 +22,7 @@ export class DrinkPage {
   poids: number;
   listPage = ListPage;
   timePage = TimePage;
+  policyPage = PolicyPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.sexe = this.navParams.get('sexe');
@@ -44,6 +46,11 @@ export class DrinkPage {
   toTime(){
     this.navCtrl.push(this.timePage, {
       //on retourne quoi ?!!
+    })
+  }
+
+  toPolicy(){
+    this.navCtrl.push(this.policyPage, {
     })
   }
 

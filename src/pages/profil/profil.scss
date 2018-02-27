@@ -1,17 +1,141 @@
 page-profil {
-    .profil{
-        margin:160px 10px 0 10px;
+  
+
+    @font-face {
+        font-family: 'metric';
+        src: url('../../assets/fonts/Metric-Black.otf');
+  
+    }
+  
+    ion-content{
+        background: linear-gradient(#25FFBD, #27DECF);
+      
+    }
+
+    .item-inner{
+        border: none !important;
+        -webkit-box-shadow:none !important;
+        border-bottom-color:none !important;
+        box-shadow:none !important;
+    }
+
+    .sexe{
+        background-color: transparent;
+        margin:120px 10px 0 10px;
+     
+    }
+
+    .sexe ion-select{
+        background-color:white;
+        border-radius: 10px;
+      
+    }
+    .age{
+        background-color: transparent;
+        margin:0px 10px 0 10px;
+      
+      
+    }
+    .age ion-input{
+        background-color:white;
+        border-radius: 10px; 
+       
+    }
+
+    
+       
+   
+    .poid ion-input{
+        background-color:white;
+        border-radius: 10px; 
+       
+    }
+    .poid{
+        background-color: transparent;
+        margin:0px 10px 0 10px;
+        border: none;
+      
     }
 
     ion-label{
         width:145px;
+        float: left;
+    }
+
+    ion-input{
+        width:100px;
+        float: left;
+    }
+
+    .ageNumber{
+        background-color: white;
+        border-radius: 10px;
+        height: 50px;
+        width: 122px;
+
+    }
+
+    .poidNumber{
+        background-color: white;
+        border-radius: 10px;
+        height: 50px;
+        width: 60px ;
+
+    }
+
+
+    .sexeLabel{
+        font-family: 'metric',sans-serif;
+        font-weight: bold;
+        color: black !important;
+        font-size: 5rem;  
+        float: left;    
+        margin-bottom: 0;
+        
+    }
+
+    .ageLabel{
+        font-family: 'metric',sans-serif;
+        font-weight: bold;
+        width: 130px;
+        color: black !important;
+        font-size: 5rem;    
+       
+        margin: 0;
+    }
+    .poidLabel{
+        font-family: 'metric',sans-serif;
+        font-weight: bold;
+        color: black !important;
+        font-size: 5rem;   
+        width: 150px; 
+        float: left;  
+    }
+    
+    img{  
+        position: absolute;
+        right:14px;   
     }
 
     .suivant{
         position: absolute;
+        height: 50px;
+        font-size:1.5rem;
+        font-weight: bold;
         bottom: 0;
         margin: 0;
         width: 100%;
         left: 0;
+        background-color: white;
+        color: black;
+        text-align: center;
+        
+    
     }
+
+
+
+
+
+    
 }

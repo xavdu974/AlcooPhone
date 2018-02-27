@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PolicyPage } from '../policy/policy';
 
 /**
  * Generated class for the ListPage page.
@@ -15,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListPage {
   categ: string = this.navParams.get('categ');
+  policyPage = PolicyPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -24,4 +26,10 @@ export class ListPage {
     console.log(this.categ);
   }
 
+  toPolicy(){
+    this.navCtrl.push(this.policyPage, {
+    })
+  }
+
+  
 }

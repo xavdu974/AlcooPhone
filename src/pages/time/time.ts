@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ResultPage } from '../result/result';
+import { PolicyPage } from '../policy/policy';
 
 /**
  * Generated class for the TimePage page.
@@ -16,6 +17,7 @@ import { ResultPage } from '../result/result';
 })
 export class TimePage {
   resultPage = ResultPage;
+  policyPage = PolicyPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -30,4 +32,8 @@ export class TimePage {
     })
   }
 
+  toPolicy(){
+    this.navCtrl.push(this.policyPage, {
+    })
+  }
 }

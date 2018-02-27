@@ -10,22 +10,26 @@
 
 
 <ion-content padding>
-  <div class="profil">
-    <ion-item>
-      <ion-label>Je suis :</ion-label>
+
+  
+  
+  <ion-item class="sexe">
+      <ion-label class="sexeLabel">Je suis</ion-label>
       <ion-select [(ngModel)]="sexe" interface="popover" required="true">
         <ion-option value="homme" selected>Homme</ion-option>
         <ion-option value="femme">Femme</ion-option>
       </ion-select>
+  </ion-item>
+      <ion-item class="age">
+        <ion-label class="ageLabel">j'ai</ion-label>
+       <ion-input type="number" class="ageNumber" [(ngModel)]="age" required="true" clearInput=true min="18" max="99" value="18" size="1"></ion-input>
+      </ion-item>
+      <ion-item class="poid">
+      <ion-label class="poidLabel">et je pèse</ion-label>
+      <ion-input type="number" class="poidNumber" [(ngModel)]="poids" required="true" clearInput=true min="30" max="130" value="60"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label>J'ai :</ion-label>
-      <ion-input type="number" [(ngModel)]="age" required="true" clearInput=true min="18" max="99" value="18" size="1"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>Je pèse :</ion-label>
-      <ion-input type="number" [(ngModel)]="poids" required="true" clearInput=true min="30" max="130" value="60"></ion-input>
-    </ion-item>
-  </div>
-  <button class="suivant" ion-button icon-right (click)="tooDrink()">Suivant</button>
+  
+
+  <button class="suivant" ion-button icon-right (click)="tooDrink()">Suivant<img class="iconnext" src="../assets/imgs/icon_next.png"></button>
 </ion-content>
+
