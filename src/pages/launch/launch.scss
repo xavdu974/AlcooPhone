@@ -4,26 +4,62 @@ page-launch {
         
     }  
 
-    .img{
-        background-image: url("../assets/imgs/backgroundhome.png");
-        width: 360px;
-        height: 640px;
+    @font-face {
+        font-family: 'metric';
+        src: url('../../assets/fonts/Metric-Black.otf');
+  
     }
+
     h1, h2{
         line-height:42px;
       
         
     }
-    .slide1 h1{
-        margin:0;
-        font-size:6rem;
+
+    .icons{
+        margin: auto;
+        max-width: 100%;
+        height: auto;
     }
 
-    .slide1 h2{
-        font-size:4rem;
-        position:relative;
-        left:20px;
+    h1{
+        margin: 0;
+        font-family: 'metric',sans-serif;
+        font-weight: bold;
+        font-size: 3.8rem; 
+        line-height: 35px;
+        width: 300px;
+        text-align: left;
+        padding-left: 30px;
+        margin-bottom: 0;
     }
+
+    .test{
+        height: 200px;
+        margin: 0;
+        font-family: 'metric',sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 135px;
+
+    }
+
+    .btn{
+        bottom: 0;
+
+    }
+
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet-active{
+        background: white;
+
+    }
+
     .button{
         border-radius: 5px;
         width: 145px;

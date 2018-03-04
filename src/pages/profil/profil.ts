@@ -21,18 +21,22 @@ export class ProfilPage {
   drinkPage = DrinkPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    localStorage.removeItem('names'); //Contient la paire id/nom des alcools ajoutée afin d'éviter un rechargement
+    //localStorage.removeItem('sexe'); //Profil sexe
+    //localStorage.removeItem('age'); //Profil age
+    //localStorage.removeItem('poids'); //Profil poids
   }
 
   tooDrink() {
-    this.navCtrl.push(this.drinkPage, {
-      sexe: this.sexe,
-      age: this.age,
-      poids: this.poids
-    })
+    localStorage.setItem('sexe', this.sexe);
+    localStorage.setItem('age', String(this.age));
+    localStorage.setItem('poids', String(this.poids));
+    this.navCtrl.push(this.drinkPage)
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilPage');
   }
+  
 
 }

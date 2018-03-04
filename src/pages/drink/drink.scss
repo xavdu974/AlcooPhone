@@ -90,19 +90,19 @@ page-drink {
       }
     
       .biere{
-        width: 85px;
+        width: 80px;
     
         text-align: center;
       }
     
       .aperitif{
-        width: 85px;
+        width: 80px;
         text-align: center;
         margin-left: 10px;
       }
     
       .digestif{
-        width: 85px;
+        width: 80px;
         text-align: center;
         margin-left: 10px;
       }
@@ -141,13 +141,33 @@ page-drink {
       }
     
       .secondlabel label{
-       width: 146px;
+       width: 125px;
        text-align: center;
        background-color: white;
        border-radius: 5px;
        height: 35px;
        padding-top: 9px;
        font-weight: bold;
+      }
+
+      #bulle, #VCbulle, #Cbulle{
+        right: -14px;
+        position: relative;
+        top: -17px;
+        /* border: red 1px dotted; */
+        border-radius: 30px;
+        background: red;
+        color: white;
+        padding: 0 4px 0 4px;
+        width: 71px;
+      }
+
+      #VCbulle{
+        right: -5px;
+      }
+
+      #Cbulle{
+        right:-30px;
       }
     
       .iconnext{  

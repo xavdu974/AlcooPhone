@@ -54,6 +54,18 @@ page-list {
         align-items: center;
     }
 
-
+    .suivant{
+        position: absolute;
+        height: 50px;
+        font-size:1.5rem;
+        font-weight: bold;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
 
 }

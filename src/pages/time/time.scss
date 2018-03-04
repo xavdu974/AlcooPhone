@@ -35,13 +35,19 @@ page-time {
     }
 
     h1{
+        line-height: 30px;
+    }
+
+    h1, ion-datetime{
         text-align: center;
         font-family: 'metric',sans-serif;
         font-weight: bold;
         font-size: 3rem; 
-        line-height: 30px;
-        
+    }
 
+    ion-datetime{
+        background:white;
+        margin:80px;
     }
 
     .suivant{

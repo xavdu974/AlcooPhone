@@ -6,7 +6,7 @@
 -->
 <ion-header no-border>
   <ion-navbar>
-    <img class="mentions" src="../../assets/imgs/Mentions.png" alt="Mentions" (click)="toPolicy()"/>
+    <img class="mentions" src="assets/imgs/Mentions.png" alt="Mentions" (click)="toPolicy()"/>
   </ion-navbar>
 
 </ion-header>
@@ -16,62 +16,61 @@
   <div class="conso">
     <h1><b>J'ai consommé</b></h1>
  </div>
-    <div class="categ">
-
+  <div class="categ">
   <div class="firstline">
       
-        <div class="biere" (click)="listing('Biere')">
-            <img src="../../assets/imgs/Biere.png" alt="Biere"/>
+        <div class="biere" (click)="listing('biere')">
+            <img src="assets/imgs/Biere.png" alt="Biere"/>
           </div>
 
-          <div class="aperitif" (click)="listing('Aperitif')">
-              <img src="../../assets/imgs/Aperitif.png" alt="Apéritif"/>
+          <div class="aperitif" (click)="listing('apero')">
+              <img src="assets/imgs/Aperitif.png" alt="Apéritif"/>
           </div>
          
-          <div class="digestif" (click)="listing('Digestif')">
-              <img src="../../assets/imgs/Digestif.png" alt="Digestif"/>
+          <div class="digestif" (click)="listing('digestif')">
+              <img src="assets/imgs/Digestif.png" alt="Digestif"/>
             </div>
-            
     </div>
          
     <div class="firstlabel">
-          <div (click)="listing('Biere')">
-            <label>Bière</label>
+          <div (click)="listing('biere')">
+            <label>Bière<span id="bulle">{{nbElems['biere']}}</span></label>
+            
           </div>
-        <div class="aperitiflabel"(click)="listing('Aperitif')">
-            <label>Apéritif</label>
-          </div>
-         <div class="digestiflabel" (click)="listing('Digestif')">
-              <label>Digestif</label>
+        <div class="aperitiflabel"(click)="listing('apero')">
+            <label>Apéritif<span id="bulle">{{nbElems['apero']}}</span></label>
+        </div>
+         <div class="digestiflabel" (click)="listing('digestif')">
+              <label>Digestif <span id="bulle">{{nbElems['digestif']}}</span></label>
           </div>
      </div>
 
 
     <div class="secondline">
 
-        <div class="vinchampagne" (click)="listing('VinChampagne')">
-            <img src="../../assets/imgs/VinChampagne.png" alt="Vin & Champagne"/>
+        <div class="vinchampagne" (click)="listing('vin')">
+            <img src="assets/imgs/VinChampagne.png" alt="Vin & Champagne"/>
           </div>
 
-      <div class="cocktail" (click)="listing('Cocktail')">
-        <img src="../../assets/imgs/Cocktail.png" alt="Cocktail"/>
+      <div class="cocktail" (click)="listing('cocktail')">
+        <img src="assets/imgs/Cocktail.png" alt="Cocktail"/>
       </div>
 
     </div>
 
     <div class="secondlabel">
 
-    <div class="labelvinChampagne" (click)="listing('VinChampagne')">
-        <label>Vin / Champagne</label>
+    <div class="labelvinChampagne" (click)="listing('vin')">
+        <label>Vin / Champagne<span id="VCbulle">{{nbElems['vin']}}</span></label>
       </div>
 
-    <div class="cocktaillabel" (click)="listing('Cocktail')">
-        <label>Cocktail</label>
+    <div class="cocktaillabel" (click)="listing('cocktail')">
+        <label>Cocktail<span id="Cbulle">{{nbElems['cocktail']}}</span></label>
       </div>
 
     </div>
 
 </div>
 
-<button class="suivant" ion-button icon-right (click)="toTime()">Suivant<img class="iconnext" src="../assets/imgs/icon_next.png"></button>
+<button class="suivant" ion-button icon-right (click)="toTime()">Suivant<img class="iconnext" src="assets/imgs/icon_next.png"></button>
 </ion-content>

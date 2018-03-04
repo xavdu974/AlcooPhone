@@ -7,12 +7,16 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>result</ion-title>
+    
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <h2>Je suis à</h2>
+  <h1>{{tauxActuel}}</h1>
+  <h6>g/ litre de sang</h6>
+  <h3>{{resultat}}</h3>
+  <button class="suivant" ion-button icon-right [navPush]="toLaunch">! AlcooPhone !</button>
 </ion-content>

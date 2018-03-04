@@ -1,61 +1,66 @@
 <?xml version="1.0"?>
-<alcool>
-    <biere>
-        <item>
+<categories>
+    <category>
+        <name>biere</name>
+        <item id="1">
             <name>leffe</name>
             <degre>9</degre>
         </item>
-        <item>
+        <item id="2">
             <name>1664</name>
             <degre>9</degre>
         </item>
-    </biere> 
-    <aperitif>
-        <item>
+    </category> 
+    <category>
+        <name>apero</name>
+        <item id="3">
             <name>whisky</name>
             <degre>43</degre>
         </item>
-        <item>
+        <item id="4">
             <name>porto</name>
             <degre>19</degre>
         </item>
-        <item>
+        <item id="5">
             <name>martini</name>
             <degre>15</degre>
         </item>
-    </aperitif>
-    <digestif>
-        <item>
+    </category>
+    <category>
+        <name>digestif</name>
+        <item id="6">
             <name>limoncello</name>
             <degre>34</degre>
         </item>
-        <item>
+        <item id="7">
             <name>jet27</name>
             <degre>21</degre>
         </item>
-        <item>
+        <item id="8">
             <name>porto</name>
             <degre>19</degre>
         </item>
-    </digestif>
-    <vin>
-        <item>
+    </category>
+    <category>
+         <name>vin</name>
+        <item id="9">
             <name>vin blanc</name>
             <degre>12.5</degre>
         </item>
-        <item>
+        <item id="10">
             <name>vin rouge</name>
             <degre>12.5</degre>
         </item>
-    </vin>
-    <cocktail>
-        <item>
+    </category>
+    <category>
+        <name>cocktail</name>
+        <item id="11">
             <name>pina colada</name>
             <degre>16</degre>
         </item>
-        <item>
+        <item id="12">
             <name>morito</name>
             <degre>12</degre>
         </item>
-    </cocktail>
-</alcool>
+    </category>
+</categories>

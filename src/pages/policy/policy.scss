@@ -1,3 +1,47 @@
 page-policy {
 
+    @font-face {
+        font-family: 'metric';
+        src: url('../../assets/fonts/Metric-Black.otf');
+  
+    }
+  
+
+    ion-content{
+        background: linear-gradient(#25FFBD, #27DECF);
+      
+    }
+
+    .item-inner{
+        border: none !important;
+        -webkit-box-shadow:none !important;
+        border-bottom-color:none !important;
+        box-shadow:none !important;
+    }
+
+    .toolbar-background-md{
+
+        background: transparent;
+        box-shadow: none !important;
+    
+    }
+
+    h1{
+        text-align: center;
+        font-family: 'metric',sans-serif;
+        font-weight: bold;
+        font-size: 3rem; 
+        line-height: 30px;
+    }
+
+    .mentions{
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        height: 400px;
+        width: 300px;
+        margin:auto;
+    }
+
+
 }

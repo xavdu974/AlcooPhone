@@ -7,19 +7,17 @@
 
 <ion-header no-border>
   <ion-navbar>
-    <img class="mentions" src="../../assets/imgs/Mentions.png" alt="Mentions" (click)="toPolicy()"/>
+    <img class="mentions" src="assets/imgs/Mentions.png" alt="Mentions" (click)="toPolicy()"/>
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-  <h1>{{categ}}</h1>
-<ion-list>
-  <ion-item>
-    <h2 id="name">Whisky</h2>
-    <p id="degree">40°</p>
-    <button ion-button clear item-end> <img src="../../assets/imgs/retirer.png" alt="Retirer"/></button>
-    <button ion-button clear item-end> <img src="../../assets/imgs/ajouter.png" alt="Ajouter"/></button>
+  <ion-item *ngFor="let item of xmlItems">
+    {{item.id}} : {{item.name}}, {{item.degre}}°
+    <button ion-button clear item-end (click)="add(item.id)"> <img src="assets/imgs/ajouter.png" alt="Ajouter"/></button>
+    {{tab[item.id]}}
+    <button ion-button clear item-end (click)="remove(item.id)"> <img src="assets/imgs/retirer.png" alt="Retirer"/></button>
   </ion-item>
-</ion-list>
+  <button class="suivant" (click)="valid()">Valider</button>
+
 </ion-content>
